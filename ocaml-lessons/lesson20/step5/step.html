@@ -33,7 +33,7 @@ recursive methods. </p>
 <br />
 
 <p>Indeed, depth is a recursive function, and the typer does not allow
-to use it will two different types of arguments. But now, with
+to use it with two different types of arguments. But now, with
 explicit polymorphism, you can tell the typer that it's ok to do so, since the function is polymorphic:</p>
 
 <p><code>let rec depth : 'a. 'a t -> _ = function Leaf _ -> 1 | Node x -> 1 + depth x</code></p>
